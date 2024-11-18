@@ -1,0 +1,148 @@
+*, *::after, *::before{
+    margin:0;
+    box-sizing: content-box;
+    font-family: 'Work Sans';
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+.background{
+background-image: url(./assets/images/background-pattern-desktop.svg);
+width:100%;
+height:15rem;
+background-size: contain;
+}
+
+main{
+    max-width: 45rem;
+    margin:auto;
+    border: solid black 2px;
+    position:absolute;
+  left:0;
+  right:0;
+  top:6rem;
+  z-index: 2;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1em;
+  box-shadow: 3px 10px 20px hsl(292, 16%, 49%);
+ 
+    
+}
+
+h1{
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    font-weight: 700;
+    font-size: 5em;
+    color:hsl(292, 42%, 14%);
+}
+
+h2{
+   
+    font-size: 1.3em;
+    max-width: 35rem;
+    text-wrap: nowrap;
+    color:hsl(292, 42%, 14%);
+    
+}
+
+h2:hover, img:hover{
+cursor: pointer;
+
+}
+h2:hover{
+    color:hsl(281, 83%, 54%)
+}
+.closed_paragraph{
+   display: none;
+  
+ 
+}
+.open_paragraph{
+    font-size: 1.2em; 
+    margin-top: 1em;
+    font-weight: 400;
+    color: hsl(292, 16%, 49%);
+   
+
+
+}
+
+div{
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+  
+    align-content: center;
+}
+
+section{
+margin-top: 2em;
+
+}
+
+@media screen and (max-width:768px) {
+    main{
+        max-width: 30rem;
+        margin:auto;
+       
+        min-width: 200px;
+      top:18rem;
+      z-index: 2;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 1em;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 5rem;
+    
+     
+        
+    }
+
+    h1{
+        align-items: center;
+        display: flex;
+        gap: 2rem;
+        font-weight: 700;
+        font-size:xx-large;
+        color:hsl(292, 42%, 14%);
+    }
+
+    .open_paragraph{
+        font-size: 1.2em; 
+        margin-top: 1em;
+        font-weight: 400;
+        color: hsl(292, 16%, 49%);
+        max-width:23rem;
+       
+    
+    
+    }
+    
+
+
+    h2{
+   
+        font-size: 1.3em;
+        max-width: 20rem;
+        color:hsl(292, 42%, 14%);
+        text-wrap: wrap;
+    }
+
+    .background{
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+        width:100%;
+        padding-bottom:10rem;
+        background-size:cover;
+        background-repeat: no-repeat;
+      
+        
+        }
+    
+  
+}
