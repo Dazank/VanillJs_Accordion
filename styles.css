@@ -10,7 +10,7 @@
 }
 .background{
 background-image: url(./assets/images/background-pattern-desktop.svg);
-width:100%;
+
 height:15rem;
 background-size: contain;
 }
@@ -87,18 +87,18 @@ margin-top: 2em;
 
 @media screen and (max-width:768px) {
     main{
-        max-width: 30rem;
-        margin:auto;
-       
+        max-width: 35rem;
+      
         min-width: 200px;
       top:18rem;
       z-index: 2;
       background-color: white;
       padding: 2rem;
       border-radius: 1em;
-      margin-left: 2rem;
-      margin-right: 2rem;
+      margin-left: 10%;
+      margin-right: 10%;
       margin-bottom: 5rem;
+      border: solid red 2px;
     
      
         
@@ -136,13 +136,12 @@ margin-top: 2em;
 
     .background{
         background-image: url(./assets/images/background-pattern-mobile.svg);
-        width:100%;
+        
         padding-bottom:10rem;
         background-size:cover;
         background-repeat: no-repeat;
       
         
         }
-    
-  
+ 
 }
